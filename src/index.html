@@ -6,9 +6,81 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="root">
-      <h1>Hello world!</h1>
-    </div>
+    <div id="Bienvenida">
+        <center>
+        <h1>¡Bienvenido a contraseñas seguras!</h1>
+        <p>¿Siempre usas las mismas para tus redes sociales, el banco y documentos importantes?</p>
+        <p>¡Prueba este sistema de cifrado/descifrado y evita que te hackeen!</p>
+        <br>
+        <input type= "button" value= "Comenzar" id= "beginCipher" onclick="instructionsToCipher();">
+        </center>
+      </div>
+
+      <div id="codeMessage" class="hidden">
+        <h1>Instrucciones para cifrar</h1>
+        <br>1. Elige el número de caracteres que se va a desplazar tu cifrado.
+        <br>Ej. Si eliges 3 lugares para el desplazamiento, la letra A cifrada la letra D, la B sería la E y así sucesivamente
+        <br><br>Número de lugares desplazados
+        <br><button id="decrease" onclick="decreaseValue();" value="Decrease Value">-</button>
+          <input type="number" id="number" value="0" />
+          <button id="increase" onclick="increaseValue();" value="Increase Value">+</button>
+        <br><br>2. Inserta el mensaje que quieres cifrar
+          <br><input type= "text" placeholder= "Escribe tu mensaje aquí" id= "putYourCodeHere">
+          <br><br>
+          <input type= "button" value= "Cifrar" id="codeMessage" onclick="encryptingCode();">
+        </div>
+
+        <div id= "encryptingCode" class= "hidden">
+          <center>
+          <p onclick= "codeResults();">Cifrando mensaje, espera unos segundos</p>
+          </center>
+        </div>
+
+        <div id= "codeResults" class= "hidden">
+          <center>
+            <h1>Resultados</h1>
+            <br>Mensaje insertado
+            <br><input type= "text">
+            <br><br>Mensaje cifrado
+            <br><input type= "text">
+            <br><br>¿Qué quieres hacer ahora?
+            <br><br><input type= button value= "Cifrar otro mensaje" id= "codeOtherMessage" onclick= "codeOtherMessage();">
+            <br><br><input type= "button" value= "Descifrar un mensaje" id= "codeToDecode" onclick= "decodeMessage();">
+          </center>
+        </div>
+
+        <div id= "decodeMessage" class= "hidden">
+          <h1>Instrucciones para descifrar</h1>
+          <br>1. Elige el número de caracteres que se va a desplazar tu descifrado
+          <br>Ej. Si eliges 3 lugares para el desplazamiento la letra X descrifrada sería la letra A, la letra Y sería la letra B y así sucesivamente
+          <br><br>Número de lugares desplazados
+          <br><button id="decrease" onclick="decreaseValue();" value="Decrease Value">-</button>
+      <input type="number" id="number" value="0" />
+      <button id="increase" onclick="increaseValue();" value="Increase Value">+</button>
+          <br><br>2. Inserta el mensaje que quieres descrifrar
+          <br><input type= "text" placeholder= "Escribe tu mensaje aquí" id= "putYourDecodeHere">
+          <br><br>
+          <input type= "button" value= "Descifrar" id="decodeMessage" onclick= "desencryptingCode();">
+        </div>
+
+        <div id= "desencryptingCode" class="hidden">
+          <center>
+          <p onclick= "decodeResults();">Descifrando mensaje, espera unos segundos</p>
+          </center>
+        </div>
+
+        <div id= "decodeResults" class="hidden">
+          <center>
+            <h1>Resultados</h1>
+            <br>Mensaje insertado
+            <br><input type="text">
+            <br><br>Mensaje descifrado
+            <br><input type= "text">
+            <br><br>¿Qué quieres hacer ahora?
+            <br><br><input type= "button" value= "Descifrar otro mensaje" id= "decodeOtherMessage" onclick= "decodeOtherMessage();">
+            <br><br><input type= "button" value= "Cifrar un mensaje" id= "decodeToCode" onclick= "decodeTocode();">
+          </center>
+        </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>

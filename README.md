@@ -66,19 +66,19 @@ Reflexiona y luego marca los objetivos que has llegado a **entender** y **aplica
 
 ### UX
 
-- [ ] Diseñar la aplicación pensando y entendiendo al usuario.
-- [ ] Crear prototipos para obtener feedback e iterar.
+- [✔] Diseñar la aplicación pensando y entendiendo al usuario.
+- [✔] Crear prototipos para obtener feedback e iterar.
 - [ ] Aplicar los principios de diseño visual (contraste, alineación, jerarquía).
 
 ### HTML y CSS
 
-- [ ] Uso de HTML semántico.
+- [✔] Uso de HTML semántico.
 - [ ] Uso de selectores de CSS.
 - [ ] Construir tu aplicación respetando el diseño realizado (maquetación).
 
 ### DOM
 
-- [ ] Uso de selectores del DOM.
+- [✔] Uso de selectores del DOM.
 - [ ] Manejo de eventos del DOM.
 - [ ] Manipulación dinámica del DOM.
 
@@ -88,13 +88,13 @@ Reflexiona y luego marca los objetivos que has llegado a **entender** y **aplica
 - [ ] Uso de condicionales (if-else | switch).
 - [ ] Uso de bucles.
 - [ ] Uso de funciones (parámetros | argumentos | valor de retorno).
-- [ ] Declaración de variables (const & let).
+- [✔] Declaración de variables (const & let).
 
 ### Testing
 - [ ] Testeo de tus funciones.
 
 ### Git y GitHub
-- [ ] Comandos de git (add | commit | pull | status | push).
+- [✔] Comandos de git (add | commit | pull | status | push).
 - [ ] Manejo de repositorios de GitHub (clone | fork | gh-pages).
 
 ### ESLint y Sintaxis
