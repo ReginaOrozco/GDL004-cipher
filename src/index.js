@@ -18,6 +18,11 @@ let decreaseValue= ()=> {
   document.getElementById('number').value = value;
 }
 
+let showCode = ()=> {
+  var text = document.getElementById("putYourCodeHere").value;
+  document.getElementById("yourMessage").innerHTML = text;
+}
+
 let encryptingCode= ()=> {
   document.getElementById("encryptingCode").style.display = "block";
   document.getElementById("codeMessage").style.display = "none";
