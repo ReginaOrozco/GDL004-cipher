@@ -10,7 +10,6 @@ Debe contener lo siguiente:
 * Investigación UX:
   1. Explicar quiénes son los usuarios y los objetivos en relación con el
     producto.
-
   2. Explicar cómo el producto soluciona los problemas/necesidades de dichos
     usuarios.
   * La solución que propongo es sencilla y fácil de entender para mis usuarios. Traté de hacer un diseño sencillo pero que cubriera las necesidades básicas, es decir, recordar una frase que normalmente ellos (los usuarios) puedan recordar fácilmente, así como el número de desplazamientos que utilizaron para cifrar sus contraseñas. También cubre la necesidad de descifrar contraseñas, en el caso de que recuerdes dicha contraseña, pero no la frase que usaste para cifrarla.
