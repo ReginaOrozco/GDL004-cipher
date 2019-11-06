@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="Bienvenida">
+    <div class= "style" id="Bienvenida">
         <center>
         <h1>¡Bienvenido a contraseñas seguras!</h1>
         <p>¿Siempre usas las mismas para tus redes sociales, el banco y documentos importantes?</p>
@@ -25,14 +25,14 @@
           <input type="number" id="number" value="0" />
           <button id="increase" onclick="increaseValue();" value="Increase Value">+</button>
         <br><br>2. Inserta el mensaje que quieres cifrar
-          <br><input type= "text" placeholder= "Escribe tu mensaje aquí" id= "putYourCodeHere">
+          <br><input type= "text" placeholder= "Escribe tu mensaje aquí" id= "putYourCodeHere" onfocus="this.value=''">
           <br><br>
           <input class= "button" type= "button" value= "Cifrar" id="codeMessage" onclick="encryptingCode();">
         </div>
 
         <div id= "encryptingCode" class= "hidden">
           <center>
-          <p onclick= "codeResults();" onclick= "showCode();">Cifrando mensaje, espera unos segundos</p>
+          <p onclick= "codeResults(); showCode();">Cifrando mensaje, espera unos segundos</p>
           </center>
         </div>
 
@@ -58,7 +58,7 @@
       <input type="number" id="number" value="0" />
       <button id="increase" onclick="increaseValue();" value="Increase Value">+</button>
           <br><br>2. Inserta el mensaje que quieres descrifrar
-          <br><input type= "text" placeholder= "Escribe tu mensaje aquí" id= "putYourDecodeHere">
+          <br><input type= "text" placeholder= "Escribe tu mensaje aquí" id= "putYourDecodeHere" onfocus="this.value=''">
           <br><br>
           <input class= "button" type= "button" value= "Descifrar" id="decodeMessage" onclick= "desencryptingCode();">
         </div>

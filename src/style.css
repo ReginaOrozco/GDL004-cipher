@@ -2,6 +2,13 @@ div.hidden {
   display: none;
   font-family: "raleway";
   background-color: #E6E6FA;
+  height:100vh;
+}
+
+div.style {
+  font-family: "raleway";
+  background-color: #E6E6FA;
+  height: 100vh;
 }
 
 .button {
@@ -9,4 +16,12 @@ border-radius: 5px;
 background-color: #4CAF50;
 font-family: "raleway";
 color: #FFFFFF;
+}
+
+body{
+  margin:0;
+}
+
+h1{
+  margin:0;
 }
