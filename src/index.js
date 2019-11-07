@@ -8,6 +8,7 @@ let increaseValue= ()=> {
   value = isNaN(value) ? 0 : value;
   value++;
   document.getElementById('number').value = value;
+  console.log(number);
 }
 
 let decreaseValue= ()=> {
@@ -18,9 +19,12 @@ let decreaseValue= ()=> {
   document.getElementById('number').value = value;
 }
 
-let showCode = ()=> {
+let showCodeAndOffset = ()=> {
   var text = document.getElementById("putYourCodeHere").value;
   document.getElementById("yourMessage").innerHTML = text;
+  var printOffset = document.getElementById("number").value;
+  document.getElementById("yourOffset").innerHTML = printOffset;
+  console.log(putYourCodeHere);
 }
 
 let encryptingCode= ()=> {

@@ -1,7 +1,5 @@
 **`README.md`**:
 
-Debe contener lo siguiente:
-
 * Un título con el nombre de tu proyecto.
 * Contraseñas seguras
 * Un resumen de 1 o 2 líneas de qué se trata tu proyecto.
