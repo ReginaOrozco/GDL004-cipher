@@ -1,6 +1,12 @@
 window.cipher = {
-  encode: () => {
-    let string = "abc";
-    string = string.toUpperCase();
+  encode: (textBeforeCipher, offset) => {
+    var messageInUpperCase = textBeforeCipher.toUpperCase();
+    for (var i = 0; i < messageInUpperCase.length; i++){
+      console.log(messageInUpperCase.charAt(i));
     }
+
+    return messageInUpperCase;
+    }
+
+
    }

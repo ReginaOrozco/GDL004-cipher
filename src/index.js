@@ -21,10 +21,10 @@ let decreaseValue= ()=> {
 
 let showCodeAndOffset = ()=> {
   var text = document.getElementById("putYourCodeHere").value;
-  document.getElementById("yourMessage").innerHTML = text;
+  document.getElementById("messageToCode").innerHTML = text;
   var printOffset = document.getElementById("number").value;
-  document.getElementById("yourOffset").innerHTML = printOffset;
-  console.log(putYourCodeHere);
+  var cipherMessage = window.cipher.encode(text, printOffset);
+  document.getElementById("messageAfterCode").innerHTML = cipherMessage;
 }
 
 let encryptingCode= ()=> {
