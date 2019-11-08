@@ -8,7 +8,6 @@ let increaseValue= ()=> {
   value = isNaN(value) ? 0 : value;
   value++;
   document.getElementById('number').value = value;
-  console.log(number);
 }
 
 let decreaseValue= ()=> {
@@ -42,6 +41,21 @@ let codeOtherMessage= ()=> {
   document.getElementById("codeResults").style.display = "none";
 }
 
+let increaseValue2= ()=> {
+  var value = parseInt(document.getElementById('number2').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value++;
+  document.getElementById('number2').value = value;
+}
+
+let decreaseValue2= ()=> {
+  var value = parseInt(document.getElementById('number2').value, 10);
+  value = isNaN(value) ? 0 : value;
+  value < 1 ? value = 1 : '';
+  value--;
+  document.getElementById('number2').value = value;
+}
+
 let decodeMessage= ()=> {
   document.getElementById("decodeMessage").style.display = "block";
   document.getElementById("codeMessage").style.display = "none";
@@ -54,6 +68,11 @@ let desencryptingCode= ()=> {
 }
 
 let decodeResults= ()=> {
+  var text = document.getElementById("putYourDecodeHere2").value;
+  document.getElementById("messageToDecode").innerHTML = text;
+  var printOffset = document.getElementById("number2").value;
+  var decodeMessage = window.cipher.decode(text, printOffset);
+  document.getElementById("messageAfterDecode").innerHTML = decodeMessage;
   document.getElementById("decodeResults").style.display = "block";
   document.getElementById("desencryptingCode").style.display = "none";
 }

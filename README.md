@@ -12,7 +12,8 @@
     usuarios.
   * La solución que propongo es sencilla y fácil de entender para mis usuarios. Traté de hacer un diseño sencillo pero que cubriera las necesidades básicas, es decir, recordar una frase que normalmente ellos (los usuarios) puedan recordar fácilmente, así como el número de desplazamientos que utilizaron para cifrar sus contraseñas. También cubre la necesidad de descifrar contraseñas, en el caso de que recuerdes dicha contraseña, pero no la frase que usaste para cifrarla.
   3. Luego colocarás la foto de tu primer prototipo en papel.
+  * !(https://github.com/reggieraccoon/GDL004-cipher/blob/master/Prototipo.jpg)
   4. Agregar un resumen del feedback recibido indicando las mejoras a realizar.
-
+  Los usuarios me comentaron que el prototipo es intuitivo pero que el flujo pudo haber sido más corto, es decir, en una sola pantalla poner las dos opciones para cifrar o descifrar, sin tener que hacer un flujo completo para cada acción.
   5. Imagen del prototipo final.
   * https://www.figma.com/file/bx8gpEjrvUgjBYr3VlfOUL/Prototipo-Cipher?node-id=0%3A1

@@ -54,18 +54,18 @@
           <br>1. Elige el número de caracteres que se va a desplazar tu descifrado
           <br>Ej. Si eliges 3 lugares para el desplazamiento la letra X descrifrada sería la letra A, la letra Y sería la letra B y así sucesivamente
           <br><br>Número de lugares desplazados
-          <br><button id="decrease" onclick="decreaseValue();" value="Decrease Value">-</button>
-      <input type="number" id="number" value="0" />
-      <button id="increase" onclick="increaseValue();" value="Increase Value">+</button>
+          <br><button id="decrease" onclick="decreaseValue2();" value="Decrease Value">-</button>
+      <input type="number" id="number2" value="0">
+      <button id="increase" onclick="increaseValue2();" value="Increase Value">+</button>
           <br><br>2. Inserta el mensaje que quieres descrifrar
-          <br><input type= "text" placeholder= "Escribe tu mensaje aquí" id= "putYourDecodeHere" onfocus="this.value=''">
+          <br><input type= "text" placeholder= "Escribe tu mensaje aquí" id= "putYourDecodeHere2" onfocus="this.value=''">
           <br><br>
           <input class= "button" type= "button" value= "Descifrar" id="decodeMessage" onclick= "desencryptingCode();">
         </div>
 
         <div id= "desencryptingCode" class="hidden">
           <center>
-          <p onclick= "decodeResults();", "showCode();">Descifrando mensaje, espera unos segundos</p>
+          <p onclick= "decodeResults();">Descifrando mensaje, espera unos segundos</p>
           </center>
         </div>
 
@@ -75,7 +75,7 @@
             <br>Mensaje insertado
             <br><p id= "messageToDecode"></p>
             <br><br>Mensaje descifrado
-            <br>
+            <br><p id= "messageAfterDecode"></p>
             <br><br>¿Qué quieres hacer ahora?
             <br><br><input class= "button" type= "button" value= "Descifrar otro mensaje" id= "decodeOtherMessage" onclick= "decodeOtherMessage();">
             <br><br><input class= "button" type= "button" value= "Cifrar un mensaje" id= "decodeToCode" onclick= "decodeTocode();">
